@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ウルサポ 組織設計・マネジメント研修</title>
+    <title>【自己決定理論】ウルサポ組織設計・マネジメント研修</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,127 +13,128 @@
             scroll-behavior: smooth;
         }
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x600/3498db/ffffff?text=%E7%B5%84%E7%B9%94%E3%81%A8%E6%88%90%E9%95%B7') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1200x600/16a34a/ffffff?text=%E5%86%85%E7%99%BA%E7%9A%84%E5%8B%95%E6%A9%9F%E4%BB%98%E3%81%91') no-repeat center center/cover;
         }
         .card-hover:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
+        .tab-button.active {
+            border-bottom-color: #2563eb;
+            color: #2563eb;
+            font-weight: 600;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
     <!-- ヘッダー -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-gray-800">
-                <i class="fas fa-sitemap mr-2 text-blue-600"></i>ウルサポ研修
+                <i class="fas fa-brain mr-2 text-green-600"></i>自己決定理論
             </a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="#motivation" class="text-gray-600 hover:text-blue-600">モチベーション</a>
-                <a href="#management" class="text-gray-600 hover:text-blue-600">マネジメント</a>
-                <a href="#communication" class="text-gray-600 hover:text-blue-600">コミュニケーション</a>
-                <a href="#strategy" class="text-gray-600 hover:text-blue-600">組織戦略</a>
+                <a href="#theory" class="text-gray-600 hover:text-blue-600">理論の核心</a>
+                <a href="#practice" class="text-gray-600 hover:text-blue-600">実践方法</a>
+                <a href="#related" class="text-gray-600 hover:text-blue-600">関連理論</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
         <!-- モバイルメニュー -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
-            <a href="#motivation" class="block py-2 text-gray-600 hover:text-blue-600">モチベーション</a>
-            <a href="#management" class="block py-2 text-gray-600 hover:text-blue-600">マネジメント</a>
-            <a href="#communication" class="block py-2 text-gray-600 hover:text-blue-600">コミュニケーション</a>
-            <a href="#strategy" class="block py-2 text-gray-600 hover:text-blue-600">組織戦略</a>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 bg-white border-t">
+            <a href="#theory" class="block py-2 text-gray-600 hover:text-blue-600">理論の核心</a>
+            <a href="#practice" class="block py-2 text-gray-600 hover:text-blue-600">実践方法</a>
+            <a href="#related" class="block py-2 text-gray-600 hover:text-blue-600">関連理論</a>
         </div>
     </header>
 
     <main>
         <!-- ヒーローセクション -->
-        <section class="hero-section text-white py-20">
+        <section class="hero-section text-white py-24">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">ウルサポ 組織設計・マネジメント研修</h1>
-                <p class="text-lg md:text-xl mb-8">自律的な成長を促し、最高のパフォーマンスを発揮する組織を創る。</p>
-                <a href="#motivation" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">研修を始める</a>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">自己決定理論</h1>
+                <p class="text-lg md:text-xl mb-8">「努力は夢中に勝てない」— 内発的動機付けが人と組織を突き動かす。</p>
+                <a href="#theory" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">理論を学ぶ</a>
             </div>
         </section>
 
-        <!-- モチベーション理論セクション -->
-        <section id="motivation" class="py-16 bg-white">
+        <!-- 自己決定理論の核心セクション -->
+        <section id="theory" class="py-20 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-10">
-                    <i class="fas fa-lightbulb mr-2 text-yellow-500"></i>
-                    内発的動機付けを高める
-                </h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- 自己決定理論カード -->
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover transition duration-300">
-                        <h3 class="text-xl font-bold mb-3">自己決定理論</h3>
-                        <p class="mb-4">「努力は夢中に勝てない」。人の動機づけとパーソナリティに関する理論。以下の3つの欲求を満たすことで内発的動機が高まります。</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i><div><strong>自律性:</strong> 自分の意思で行動を選択したい。</div></li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i><div><strong>有能感:</strong> 自分は有能で、役に立っていると感じたい。</div></li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i><div><strong>関係性:</strong> 他者と尊重し合う精神的な関係を築きたい。</div></li>
-                        </ul>
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-4">理論の核心：3つの心理的欲求</h2>
+                    <p class="text-gray-600 mb-12">自己決定理論は、人間が生まれながらに持つ3つの基本的な心理的欲求が満たされることで、内発的動機付けが高まり、ウェルビーイング（幸福）と成長が促進されると提唱します。</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- 自律性カード -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg card-hover transition duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <i class="fas fa-hand-pointer text-5xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">自律性 (Autonomy)</h3>
+                        <p>自分の行動は、自分自身が自発的に決めていると感じたい。</p>
                     </div>
-                    <!-- ゴールデンサークルカード -->
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover transition duration-300 text-center">
-                         <h3 class="text-xl font-bold mb-3">ゴールデンサークル</h3>
-                         <img src="https://placehold.co/400x300/f0f0f0/333333?text=GOLDEN+CIRCLE" alt="ゴールデンサークルの図" class="mx-auto my-4 rounded-lg">
-                         <p>WHY（なぜやるのか）から始めることで、人の心を動かし、行動を促すことができます。</p>
+                    <!-- 有能感カード -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg card-hover transition duration-300">
+                        <div class="text-yellow-500 mb-4">
+                            <i class="fas fa-star text-5xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">有能感 (Competence)</h3>
+                        <p>自分には能力があり、役に立っていると実感したい。</p>
                     </div>
-                    <!-- 自己効力感カード -->
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover transition duration-300">
-                        <h3 class="text-xl font-bold mb-3">自己効力感の醸成</h3>
-                        <p class="mb-4">「自分ならできる」という感覚を高める4つの源泉。</p>
-                        <ul class="list-disc list-inside space-y-1">
-                            <li><strong>成功体験:</strong> 小さな成功を積み重ねる。</li>
-                            <li><strong>代理経験:</strong> 他者の成功を見て学ぶ。</li>
-                            <li><strong>社会的説得:</strong> 他者からの励ましや肯定的なフィードバック。</li>
-                            <li><strong>生理的・感情的状態:</strong> ストレスを管理し、ポジティブな状態を保つ。</li>
-                        </ul>
+                    <!-- 関係性カード -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg card-hover transition duration-300">
+                        <div class="text-red-500 mb-4">
+                             <i class="fas fa-heart text-5xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">関係性 (Relatedness)</h3>
+                        <p>他者と尊重し合う、精神的な関係を築きたい。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- マネジメントセクション -->
-        <section id="management" class="py-16">
+        <!-- 実践方法セクション -->
+        <section id="practice" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-10">
-                    <i class="fas fa-users-cog mr-2 text-blue-700"></i>
-                    成果を最大化するマネジメント
-                </h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-bold mb-3">心理的安全性と基準の両立</h3>
-                        <p class="mb-4">強い組織は「仲良しこよし集団」ではありません。「心理的安全性」を確保しつつ、「高い仕事の基準」を追求することが重要です。</p>
-                        <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-md">
-                            <p><strong>理想の状態:</strong> わからないと気軽に言え、失敗を恐れず挑戦できる。自分の意見を躊躇なく発言できる環境。</p>
-                        </div>
+                <h2 class="text-3xl font-bold text-center mb-12">3つの欲求を育む実践方法</h2>
+                <div class="bg-white rounded-lg shadow-xl p-8">
+                    <!-- タブボタン -->
+                    <div class="flex border-b mb-8 justify-center">
+                        <button class="tab-button py-2 px-6 text-gray-500 border-b-2 border-transparent transition active" data-tab="autonomy">自律性を高める</button>
+                        <button class="tab-button py-2 px-6 text-gray-500 border-b-2 border-transparent transition" data-tab="competence">有能感を高める</button>
+                        <button class="tab-button py-2 px-6 text-gray-500 border-b-2 border-transparent transition" data-tab="relatedness">関係性を高める</button>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-bold mb-3">権限移譲とダブルバインドの回避</h3>
-                        <p class="mb-4">部下を信じ、仕事を任せることで成長を促します。しかし、矛盾した指示（ダブルバインド）は部下を混乱させ、パフォーマンスを低下させるため注意が必要です。</p>
-                        <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-md">
-                           <p><strong>NG例:</strong> 「もっと自分で考えろ」と言った直後に「なぜ相談しなかったんだ」と叱責する。</p>
+                    <!-- タブコンテンツ -->
+                    <div id="tab-content">
+                        <div class="tab-pane active" id="autonomy">
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="bg-blue-50 p-4 rounded-lg"><strong>目標設定の自由度</strong><p class="text-sm text-gray-600">自身の目標を自分で設定・選択させる。</p></div>
+                                <div class="bg-blue-50 p-4 rounded-lg"><strong>意思決定への参加</strong><p class="text-sm text-gray-600">プロジェクトや戦略の決定プロセスに参加させる。</p></div>
+                                <div class="bg-blue-50 p-4 rounded-lg"><strong>柔軟な働き方の推奨</strong><p class="text-sm text-gray-600">時間や場所にとらわれない働き方をサポートする。</p></div>
+                                <div class="bg-blue-50 p-4 rounded-lg"><strong>裁量権の付与</strong><p class="text-sm text-gray-600">自分の方法で仕事を進める裁量を与える。</p></div>
+                                <div class="bg-blue-50 p-4 rounded-lg"><strong>非金銭的な報酬</strong><p class="text-sm text-gray-600">自主的な行動やアイデアを称賛する。</p></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md md:col-span-2">
-                        <h3 class="text-xl font-bold mb-3">カッツ理論：マネージャーに必要な3つのスキル</h3>
-                        <img src="https://placehold.co/800x300/ffffff/333333?text=%E3%82%AB%E3%83%83%E3%83%84%E7%90%86%E8%AB%96" alt="カッツ理論の図" class="w-full h-auto rounded-lg mb-4">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div>
-                                <h4 class="font-bold">テクニカルスキル</h4>
-                                <p>業務遂行能力。現場に近いほど重要。</p>
+                        <div class="tab-pane hidden" id="competence">
+                             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="bg-yellow-50 p-4 rounded-lg"><strong>スキルアップの機会</strong><p class="text-sm text-gray-600">研修やワークショップで学習機会を提供する。</p></div>
+                                <div class="bg-yellow-50 p-4 rounded-lg"><strong>建設的なフィードバック</strong><p class="text-sm text-gray-600">具体的で成長に繋がるFBを定期的に行う。</p></div>
+                                <div class="bg-yellow-50 p-4 rounded-lg"><strong>成功体験の共有</strong><p class="text-sm text-gray-600">メンバーの成功事例を共有し、自信を育む。</p></div>
+                                <div class="bg-yellow-50 p-4 rounded-lg"><strong>承認と称賛</strong><p class="text-sm text-gray-600">社内表彰などで達成を公式に讃える。</p></div>
+                                <div class="bg-yellow-50 p-4 rounded-lg"><strong>達成感の提供</strong><p class="text-sm text-gray-600">小さな成功を可視化し、共に祝う文化を作る。</p></div>
                             </div>
-                            <div>
-                                <h4 class="font-bold">ヒューマンスキル</h4>
-                                <p>対人関係能力。全ての階層で重要。</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold">コンセプチュアルスキル</h4>
-                                <p>概念化能力。抽象的な事象を捉え、本質を見抜く力。経営層に近いほど重要。</p>
+                        </div>
+                        <div class="tab-pane hidden" id="relatedness">
+                             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="bg-red-50 p-4 rounded-lg"><strong>定期的な対話</strong><p class="text-sm text-gray-600">1on1などを通じ、傾聴と共感の姿勢を示す。</p></div>
+                                <div class="bg-red-50 p-4 rounded-lg"><strong>オープンな場</strong><p class="text-sm text-gray-600">雑談や非公式な交流の機会を設ける。</p></div>
+                                <div class="bg-red-50 p-4 rounded-lg"><strong>共同プロジェクト</strong><p class="text-sm text-gray-600">チームとしての一体感を醸成する機会を作る。</p></div>
+                                <div class="bg-red-50 p-4 rounded-lg"><strong>心理的安全性の確保</strong><p class="text-sm text-gray-600">失敗を罰せず、学びの機会として捉える文化。</p></div>
+                                <div class="bg-red-50 p-4 rounded-lg"><strong>メンターシップ制度</strong><p class="text-sm text-gray-600">経験豊富なメンバーが新人をサポートする。</p></div>
                             </div>
                         </div>
                     </div>
@@ -141,59 +142,30 @@
             </div>
         </section>
 
-        <!-- コミュニケーションセクション -->
-        <section id="communication" class="py-16 bg-white">
+        <!-- 関連理論セクション -->
+        <section id="related" class="py-20 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-10">
-                    <i class="fas fa-comments mr-2 text-purple-600"></i>
-                    信頼を築くコミュニケーション
-                </h2>
-                <div class="grid md:grid-cols-2 gap-8 items-start">
-                    <!-- アサーティブコミュニケーション -->
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-bold mb-3">アサーティブコミュニケーション</h3>
-                        <p class="mb-4">自分も相手も尊重する、誠実で対等な自己表現。自分の意見や感情を率直に、しかし相手に配慮しながら伝えます。</p>
-                        <img src="https://placehold.co/500x300/f0f0f0/333333?text=%E3%82%A2%E3%82%B5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%96%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE4%E3%82%BF%E3%82%A4%E3%83%97" alt="アサーティブコミュニケーションの図" class="w-full h-auto rounded-lg">
+                 <h2 class="text-3xl font-bold text-center mb-12">自己決定を支える関連理論</h2>
+                 <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3">マズローの欲求5段階説</h3>
+                        <p>生理的欲求から自己実現の欲求まで、人間の欲求は階層をなしています。社会的欲求や承認欲求は「関係性」や「有能感」に密接に関連します。</p>
                     </div>
-
-                    <!-- コーチングとカウンセリング -->
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-bold mb-3">コーチングとカウンセリングの使い分け</h3>
-                        <div class="mb-4">
-                            <h4 class="font-semibold text-lg">コーチング</h4>
-                            <p>未来志向。目標達成やスキル向上をサポートし、行動を促します。</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-lg">カウンセリング</h4>
-                            <p>過去・現在志向。心理的な課題や感情に焦点を当て、受容・傾聴・共感を通じて心の健康をサポートします。</p>
-                        </div>
+                     <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3">ハーズバーグの二要因理論</h3>
+                        <p>仕事の満足度を高める「動機付け要因」（達成感、責任など）と、不満足を防ぐ「衛生要因」（給与、労働条件など）を区別します。</p>
                     </div>
-                </div>
+                     <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3">バンデューラの自己効力感</h3>
+                        <p>「自分ならできる」という信念は、成功体験や代理経験、他者からの説得によって育まれ、「有能感」の核となります。</p>
+                    </div>
+                     <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3">アンダーマイニング効果</h3>
+                        <p>金銭などの外的報酬が、仕事そのものの楽しさといった内発的動機を低下させる現象。「自律性」を尊重した報酬設計が重要です。</p>
+                    </div>
+                 </div>
             </div>
         </section>
-
-        <!-- 組織戦略セクション -->
-        <section id="strategy" class="py-16">
-             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-10">
-                    <i class="fas fa-building mr-2 text-red-600"></i>
-                    成長し続けるための組織戦略
-                </h2>
-                <div class="bg-white p-8 rounded-lg shadow-xl">
-                    <h3 class="text-2xl font-bold mb-4">サーバントリーダーシップ</h3>
-                    <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="md:w-2/3">
-                            <p class="mb-4">従来のトップダウン型とは異なり、まず部下に奉仕し、その後チームを導くリーダーシップスタイルです。リーダーは部下の声に耳を傾け、彼らの成長を支援することで、結果的に組織全体の目標達成を促します。</p>
-                            <p>顧客と常に接する現場のメンバーが意思決定を行い、マネジメントがそれを支える「逆ピラミッド型組織」の実現を目指します。</p>
-                        </div>
-                        <div class="md:w-1/3">
-                           <img src="https://placehold.co/400x400/ffffff/333333?text=%E9%80%86%E3%83%94%E3%83%A9%E3%83%9F%E3%83%83%E3%83%89%E5%9E%8B%E7%B5%84%E7%B9%94" alt="逆ピラミッド型組織の図" class="w-full h-auto rounded-lg">
-                        </div>
-                    </div>
-                </div>
-             </div>
-        </section>
-
 
     </main>
 
@@ -213,14 +185,35 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // スムーズスクロール
+        // スムーズスクロールとモバイルメニュークローズ
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                mobileMenu.classList.add('hidden'); // メニューをクリックしたら閉じる
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+
+        // タブ切り替え
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // すべてのボタンとペインを非アクティブ化
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.add('hidden'));
+                
+                // クリックされたボタンと対応するペインをアクティブ化
+                button.classList.add('active');
+                const targetPane = document.getElementById(button.dataset.tab);
+                if (targetPane) {
+                    targetPane.classList.remove('hidden');
+                }
             });
         });
     </script>
